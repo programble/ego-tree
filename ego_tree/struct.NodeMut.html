@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `NodeMut` struct in crate `ego_tree`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, NodeMut">
+
+    <title>ego_tree::NodeMut - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>ego_tree</a></p><script>window.sidebarCurrent = {name: 'NodeMut', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>ego_tree</a>::<wbr><a class='struct' href=''>NodeMut</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/ego_tree/lib.rs.html#129-132' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct NodeMut&lt;'a, T:&nbsp;'a&gt; { /* fields omitted */ }</pre><div class='docblock'><p>A node mutator.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, T:&nbsp;'a&gt; <a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;'a, T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/ego_tree/node_mut.rs.html#3-381' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.value' class='method'><span id='value.v' class='invisible'><code>fn <a href='#method.value' class='fnname'>value</a>(&amp;mut self) -&gt; &amp;mut T</code></span></h4>
+<div class='docblock'><p>Returns the value of this node.</p>
+</div><h4 id='method.id' class='method'><span id='id.v' class='invisible'><code>fn <a href='#method.id' class='fnname'>id</a>(&amp;self) -&gt; <a class='struct' href='../ego_tree/struct.NodeId.html' title='ego_tree::NodeId'>NodeId</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Returns the ID of this node.</p>
+</div><h4 id='method.parent' class='method'><span id='parent.v' class='invisible'><code>fn <a href='#method.parent' class='fnname'>parent</a>(&amp;mut self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;T&gt;&gt;</code></span></h4>
+<div class='docblock'><p>Returns a mutator of this node&#39;s parent.</p>
+</div><h4 id='method.prev_sibling' class='method'><span id='prev_sibling.v' class='invisible'><code>fn <a href='#method.prev_sibling' class='fnname'>prev_sibling</a>(&amp;mut self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;T&gt;&gt;</code></span></h4>
+<div class='docblock'><p>Returns a mutator of this node&#39;s previous sibling.</p>
+</div><h4 id='method.next_sibling' class='method'><span id='next_sibling.v' class='invisible'><code>fn <a href='#method.next_sibling' class='fnname'>next_sibling</a>(&amp;mut self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;T&gt;&gt;</code></span></h4>
+<div class='docblock'><p>Returns a mutator of this node&#39;s next sibling.</p>
+</div><h4 id='method.first_child' class='method'><span id='first_child.v' class='invisible'><code>fn <a href='#method.first_child' class='fnname'>first_child</a>(&amp;mut self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;T&gt;&gt;</code></span></h4>
+<div class='docblock'><p>Returns a mutator of this node&#39;s first child.</p>
+</div><h4 id='method.last_child' class='method'><span id='last_child.v' class='invisible'><code>fn <a href='#method.last_child' class='fnname'>last_child</a>(&amp;mut self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;T&gt;&gt;</code></span></h4>
+<div class='docblock'><p>Returns a mutator of this node&#39;s last child.</p>
+</div><h4 id='method.has_siblings' class='method'><span id='has_siblings.v' class='invisible'><code>fn <a href='#method.has_siblings' class='fnname'>has_siblings</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>Returns true if this node has siblings.</p>
+</div><h4 id='method.has_children' class='method'><span id='has_children.v' class='invisible'><code>fn <a href='#method.has_children' class='fnname'>has_children</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>Returns true if this node has children.</p>
+</div><h4 id='method.append' class='method'><span id='append.v' class='invisible'><code>fn <a href='#method.append' class='fnname'>append</a>(&amp;mut self, value: T) -&gt; <a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Appends a new node to this node&#39;s children, returning a mutator of the new node.</p>
+</div><h4 id='method.prepend' class='method'><span id='prepend.v' class='invisible'><code>fn <a href='#method.prepend' class='fnname'>prepend</a>(&amp;mut self, value: T) -&gt; <a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Prepends a new node to this node&#39;s children, returning a mutator of the new node.</p>
+</div><h4 id='method.insert_before' class='method'><span id='insert_before.v' class='invisible'><code>fn <a href='#method.insert_before' class='fnname'>insert_before</a>(&amp;mut self, value: T) -&gt; <a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Inserts a new sibling before this node, returning a mutator of the new node.</p>
+
+<h1 id='panics' class='section-header'><a href='#panics'>Panics</a></h1>
+<p>Panics if this node is an orphan.</p>
+</div><h4 id='method.insert_after' class='method'><span id='insert_after.v' class='invisible'><code>fn <a href='#method.insert_after' class='fnname'>insert_after</a>(&amp;mut self, value: T) -&gt; <a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Inserts a new sibling after this node, returning a mutator of the new node.</p>
+
+<h1 id='panics-1' class='section-header'><a href='#panics-1'>Panics</a></h1>
+<p>Panics if this node is an orphan.</p>
+</div><h4 id='method.detach' class='method'><span id='detach.v' class='invisible'><code>fn <a href='#method.detach' class='fnname'>detach</a>(&amp;mut self)</code></span></h4>
+<div class='docblock'><p>Detaches this node from its parent.</p>
+
+<p>If this node is an orphan, does nothing.</p>
+</div><h4 id='method.append_id' class='method'><span id='append_id.v' class='invisible'><code>unsafe fn <a href='#method.append_id' class='fnname'>append_id</a>(&amp;mut self, id: <a class='struct' href='../ego_tree/struct.NodeId.html' title='ego_tree::NodeId'>NodeId</a>&lt;T&gt;) -&gt; <a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Appends a node to this node&#39;s children by ID, returning a mutator of the referenced node.</p>
+
+<p>May cause cycles, which can cause unsafety in other operations.</p>
+
+<h1 id='panics-2' class='section-header'><a href='#panics-2'>Panics</a></h1>
+<p>Panics if <code>id</code> does not refer to a node in this tree.</p>
+</div><h4 id='method.prepend_id' class='method'><span id='prepend_id.v' class='invisible'><code>unsafe fn <a href='#method.prepend_id' class='fnname'>prepend_id</a>(&amp;mut self, id: <a class='struct' href='../ego_tree/struct.NodeId.html' title='ego_tree::NodeId'>NodeId</a>&lt;T&gt;) -&gt; <a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Prepends a node to this node&#39;s children by ID, returning a mutator of the referenced node.</p>
+
+<p>May cause cycles, which can cause unsafety in other operations.</p>
+
+<h1 id='panics-3' class='section-header'><a href='#panics-3'>Panics</a></h1>
+<p>Panics if <code>id</code> does not refer to a node in this tree.</p>
+</div><h4 id='method.insert_id_before' class='method'><span id='insert_id_before.v' class='invisible'><code>unsafe fn <a href='#method.insert_id_before' class='fnname'>insert_id_before</a>(&amp;mut self, id: <a class='struct' href='../ego_tree/struct.NodeId.html' title='ego_tree::NodeId'>NodeId</a>&lt;T&gt;) -&gt; <a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Inserts a sibling before this node by ID, returning a mutator of the referenced node.</p>
+
+<p>May cause cycles, which can cause unsafety in other operations.</p>
+
+<h1 id='panics-4' class='section-header'><a href='#panics-4'>Panics</a></h1>
+<p>Panics if <code>id</code> does not refer to a node in this tree.</p>
+</div><h4 id='method.insert_id_after' class='method'><span id='insert_id_after.v' class='invisible'><code>unsafe fn <a href='#method.insert_id_after' class='fnname'>insert_id_after</a>(&amp;mut self, id: <a class='struct' href='../ego_tree/struct.NodeId.html' title='ego_tree::NodeId'>NodeId</a>&lt;T&gt;) -&gt; <a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Inserts a sibling after this node by ID, returning a mutator of the referenced node.</p>
+
+<p>May cause cycles, which can cause unsafety in other operations.</p>
+
+<h1 id='panics-5' class='section-header'><a href='#panics-5'>Panics</a></h1>
+<p>Panics if <code>id</code> does not refer to a node in this tree.</p>
+</div><h4 id='method.reparent_from_id_append' class='method'><span id='reparent_from_id_append.v' class='invisible'><code>unsafe fn <a href='#method.reparent_from_id_append' class='fnname'>reparent_from_id_append</a>(&amp;mut self, id: <a class='struct' href='../ego_tree/struct.NodeId.html' title='ego_tree::NodeId'>NodeId</a>&lt;T&gt;)</code></span></h4>
+<div class='docblock'><p>Reparents the children of a node by ID, appending them to this node&#39;s children.</p>
+
+<p>If the referenced node does not have children, does nothing.</p>
+
+<p>May cause cycles, which can cause unsafety in other operations.</p>
+
+<h1 id='panics-6' class='section-header'><a href='#panics-6'>Panics</a></h1>
+<p>Panics if <code>id</code> does not refer to a node in this tree.</p>
+</div><h4 id='method.reparent_from_id_prepend' class='method'><span id='reparent_from_id_prepend.v' class='invisible'><code>unsafe fn <a href='#method.reparent_from_id_prepend' class='fnname'>reparent_from_id_prepend</a>(&amp;mut self, id: <a class='struct' href='../ego_tree/struct.NodeId.html' title='ego_tree::NodeId'>NodeId</a>&lt;T&gt;)</code></span></h4>
+<div class='docblock'><p>Reparents the children of a node by ID, prepending them to this node&#39;s children.</p>
+
+<p>If the referenced node does not have children, does nothing.</p>
+
+<p>May cause cycles, which can cause unsafety in other operations.</p>
+
+<h1 id='panics-7' class='section-header'><a href='#panics-7'>Panics</a></h1>
+<p>Panics if <code>id</code> does not refer to a node in this tree.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, T:&nbsp;'a&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.Into.html' title='core::convert::Into'>Into</a>&lt;<a class='struct' href='../ego_tree/struct.NodeRef.html' title='ego_tree::NodeRef'>NodeRef</a>&lt;'a, T&gt;&gt; for <a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;'a, T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/ego_tree/node_mut.rs.html#383-387' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.into' class='method'><span id='into.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.Into.html#tymethod.into' class='fnname'>into</a>(self) -&gt; <a class='struct' href='../ego_tree/struct.NodeRef.html' title='ego_tree::NodeRef'>NodeRef</a>&lt;'a, T&gt;</code></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;'a, T:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> + 'a&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../ego_tree/struct.NodeMut.html' title='ego_tree::NodeMut'>NodeMut</a>&lt;'a, T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/ego_tree/lib.rs.html#128' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "ego_tree";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
